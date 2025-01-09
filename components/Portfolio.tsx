@@ -1,10 +1,5 @@
-interface PortfolioProps {
-  domain?: string;
-}
-
 
  
-
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle, Clock, Users, Rocket, Star, MessageCircle, Mail, Sparkles, X } from 'lucide-react';
 
