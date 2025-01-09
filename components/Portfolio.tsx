@@ -2,13 +2,13 @@ interface PortfolioProps {
   domain?: string;
 }
 
-const Portfolio: React.FC<PortfolioProps> = ({ domain = "fractioneer.com" }) => {
-  // Your existing component code goes here
+const Portfolio: React.FC<PortfolioProps> = ({ domain = "thefractioneer.com" }) => {
+ 
 
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle, Clock, Users, Rocket, Star, MessageCircle, Mail, Sparkles, X } from 'lucide-react';
 
-const Portfolio = ({ domain = "fractioneer.com" }) => {
+const Portfolio = ({ domain = "thefractioneer.com" }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [formType, setFormType] = useState('');
   const [formData, setFormData] = useState({ fullName: '', email: '', message: '' });
