@@ -2,7 +2,7 @@ interface PortfolioProps {
   domain?: string;
 }
 
-const Portfolio: React.FC<PortfolioProps> = ({ domain = "thefractioneer.com" }) => {
+
  
 
 import React, { useState } from 'react';
