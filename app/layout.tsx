@@ -1,6 +1,6 @@
+import { Inter } from 'next/font/google'
 
-import '../styles/globals.css'
-import { Analytics } from '@vercel/analytics/react'
+const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -9,22 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <Analytics />
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
-
-// app/page.tsx
-import Portfolio from '../components/ui/Portfolio'
-
-export default function Home() {
-  return <Portfolio />
-}
-
-// styles/globals.css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
